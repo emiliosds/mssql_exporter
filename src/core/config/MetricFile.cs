@@ -2,8 +2,17 @@
 {
     public class MetricFile
     {
-        public MetricQuery[] Queries { get; set; }
+        public MetricConfig[] Configs { get; set; }
 
-        public int MillisecondTimeout { get; set; } = 10_000;
+        public int MillisecondTimeout { get; set; }
+
+        public string ServerPort { get; set; }
+    }
+
+    public class MetricConfig
+    {
+        public string DataSource { get; set; }
+
+        public MetricQuery[] Queries { get; set; }
     }
 }

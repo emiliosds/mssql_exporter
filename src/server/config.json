@@ -1,7 +1,7 @@
 {
   "Serilog": {
-    "Using":  [ "Serilog.Sinks.Console" ],
-    "MinimumLevel": "Information",
+    "Using": [ "Serilog.Sinks.Console" ],
+    "MinimumLevel": "Error",
     "WriteTo": [
       { "Name": "Console" }
     ],

@@ -10,7 +10,7 @@ namespace mssql_exporter.core
     {
         public static IQuery GetSpecificQuery(Prometheus.MetricFactory metricFactory, MetricQuery metricQuery, ILogger logger)
         {
-            logger.Information("Creating metric {Name}", metricQuery.Name);
+            //logger.Information("Creating metric {Name}", metricQuery.Name);
             switch (metricQuery.QueryUsage)
             {
                 case QueryUsage.Counter:

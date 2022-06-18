@@ -4,15 +4,9 @@ namespace mssql_exporter.server
 {
     public class ConfigurationOptions : IConfigure
     {
-        public string DataSource { get; set; }
-
-        public string ConfigFile { get; set; } = "metrics.json";
+        public string ConfigFile { get; set; } = @"C:\github\mssql_exporter\src\server\bin\Debug\net5.0\config.json";
         
         public string ConfigText { get; set; }
-
-        public string ServerPath { get; set; } = "metrics";
-
-        public int ServerPort { get; set; } = 80;
 
         public bool AddExporterMetrics { get; set; } = false;
 
